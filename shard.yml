@@ -2,7 +2,7 @@ name: fixlines
 version: 0.1.0
 
 authors:
-  - your-name-here <your-email-here>
+  - Marc Chantreux <marc.chantreux@renater.fr>
 
 targets:
   fixlines:
