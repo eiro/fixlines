@@ -1,4 +1,6 @@
 # TODO: Write documentation for `Fixlines`
+# TODO: error targets aren't writable
+
 VERSION = "0.1.0"
 seen = {} of String => Hash(Int32,String)
 
