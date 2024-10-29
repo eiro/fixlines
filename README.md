@@ -4,6 +4,9 @@ fixlines — a simple multiple files patch system
 
 ## Installation
 
+see `INSTALL_CRYSTAL` script as relevant (debian package provided but opensuse)
+
+
         shards build --release
 
 as single file, can be compiled with

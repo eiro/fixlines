@@ -1,0 +1,15 @@
+set -eux
+[ `whoami` == root ]
+SUSE=download.opensuse.org/repositories/devel
+DEBIAN=Debian_Testing
+<<% cat > /etc/apt/sources.list.d/devel:languages:crystal.list
+# recommended installs
+# libssl-dev libxml2-dev libgmp-dev libyaml-dev
+# DEBIAN=Debian_12 # when stable ?
+# check this page: https://software.opensuse.org/download.html?project=devel%3Alanguages%3Acrystal&package=crystal#manualDebian
+deb http://$SUSE:/languages:/crystal/$DEBIAN/ /
+%
+curl -fsSL https://$SUSE:languages:crystal/$DEBIAN/Release.key |
+	gpg --dearmor > /etc/apt/trusted.gpg.d/devel_languages_crystal.gpg
+apt update
+apt install crystal
