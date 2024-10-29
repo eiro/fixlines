@@ -6,6 +6,13 @@ fixlines — a simple multiple files patch system
 
         shards build --release
 
+as single file, can be compiled with
+
+        crystal build --static --release src/fixlines.cr
+
+lot of errors with the `--static` flag. must be investigated.
+
+
 ## Usage
 
 fixlines is a filter that behave as a reverse of "grep -Hn" filter so
