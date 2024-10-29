@@ -12,7 +12,6 @@ as single file, can be compiled with
 
 lot of errors with the `--static` flag. must be investigated.
 
-
 ## Usage
 
 fixlines is a filter that behave as a reverse of "grep -Hn" filter so
@@ -36,6 +35,12 @@ it was originaly writen as a vi companion
          :r!grep -N foo *
          [edit, edit, edit ...]
          :%!fixlines
+
+## Todo
+
+* add empty lines when NR is out of range
+* document
+
 
 ## Contributing
 
